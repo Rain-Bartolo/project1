@@ -30,4 +30,3 @@ JavaScript requirements:
 Git requirements:
     A Git repository with at least 20 commits and meaningful commit messages that accurately reflect each set of changes that you make
     GitHub repository must contain only the files and commits from this project
-
