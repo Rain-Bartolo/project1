@@ -8,12 +8,11 @@ body{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/pexels-anni-roenkae-2860804.jpg);
     background-size: cover;
     background-position: center;
-    
 }
 .nav{
     width:85%;
     margin: auto;
-    padding: 35px 0;
+    padding: 25px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,15 +32,14 @@ body{
     content: '';
     height:3px;
     width: 0%;
-    background: #00964b;
+    background: #ffffff;
     position: absolute;
     left:0;
     bottom:-7px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .nav ul li:hover:after{
     width:100%
-
 }
 .head{
     width: 100%;
@@ -51,7 +49,15 @@ body{
     text-align: center;
     color: #fff;
 }
-
+h1{
+    font-size: 45px;
+    text-transform: capitalize;
+    font-style: oblique;
+    padding: 10px;
+}
+h3{
+    font-size: 20px;
+}
 .signup{
     display: grid;
 
