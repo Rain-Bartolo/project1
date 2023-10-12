@@ -3,10 +3,10 @@
   <head>
     <title>Project 1 - ITMD 362</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" media="screen" href="css/reset.css" />
-    <link rel="stylesheet" media="screen" href="css/style.css" />
-<!--I don't know why prettier adds spaces to these ^^ tags, remember to take them out at the end-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" media="screen" href="css/reset.css"/>
+    <link rel="stylesheet" media="screen" href="css/style.css"/>
+    <script async src="/js/script.js"></script>
   </head>
   <body>
     <div id="banner">
@@ -23,14 +23,14 @@
         <p>Members will receive weekly emails with tips and tricks to fill their life with the joys and wonders of the world including but not limited to: salted caramel candy, godzilla posters, orange cat window decorations, and more!</p>
       </div>
       <div class="signup">
-        <form name="signupForm" method="get" action="#null" onsubmit="return validateForm()">
+        <form name="signupForm" method="post" action="#" onsubmit="return validateForm()">
           <label for="first">First Name:</label>
           <input type="text" name="firstName" id="first">
           <label for="last">Last Name:</label>
           <input type="text" name="lastName" id="last">
           <label for="email">Email:</label>
           <input type="text" name="email" id="email">
-          <input type="submit" value="Sign-up" >
+          <input type="submit" value="Sign-up" onclick="return validateForm()">
         </form>
       </div>
     </div>
