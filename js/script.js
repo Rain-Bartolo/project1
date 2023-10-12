@@ -1,10 +1,10 @@
-//this is one of the scripts of all time
-function validateForm() {
-  let x = document.forms["signupForm"]["firstName"].value;
-  let y = document.forms["signupForm"]["lastName"].value;
-  let z = document.forms["signupForm"]["email"].value;
-  if (x == "" || y == ""|| z == "") {
+function validateForm(){
+  let fname = document.forms["signupForm"]["firstName"].value;
+  let lname = document.forms["signupForm"]["lastName"].value;
+  let email = document.forms["signupForm"]["email"].value;
+  if (fname == "" || lname == "" || email == "") {
     alert("All fields must be filled out!");
     return false;
-  }
+  } 
+  return true;
 } 
