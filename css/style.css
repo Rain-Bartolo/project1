@@ -81,14 +81,25 @@ p {
   background-color: #000;
 }
 .signup{
-    background-color:rgba(0,0,0,.5);
+  background-color:rgba(0,0,0,.5);
+}
+label{
+  text-indent: 10px;
+  text-align: center;
 }
 input{
   width: 100%;
   margin: 5px;
+  border-bottom: 3px solid #c82c84;
 }
 input[type=submit]{
-    color: #000;
+  border: 0px;
+  width: 50%;
+  color: #000;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
 }
 /*MAKE SURE THE FORM LOOKS GOOD IN MOBILE VIEW 
 BECAUSE SHE'S SCRUNCHING UP TO TAKE UP THE TOP SPACE AND I HATE THAT*/
@@ -97,7 +108,7 @@ BECAUSE SHE'S SCRUNCHING UP TO TAKE UP THE TOP SPACE AND I HATE THAT*/
     top:10%;
   }
   .under{
-      top:60%;
+      top:55%;
       padding: 0px;
       display: grid;
   }
