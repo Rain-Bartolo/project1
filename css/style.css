@@ -36,7 +36,7 @@ body {
   content: "";
   height: 3px;
   width: 0%;
-  background: #fff;
+  background: #c82c84;
   position: absolute;
   left: 0;
   bottom: -7px;
@@ -65,7 +65,7 @@ p {
   text-indent: 15px;
   line-height: 1.15;
 }
-.under{
+.subtitle{
   display: flex;
   position: absolute;
   top: 50%;
@@ -83,36 +83,38 @@ p {
 .signup{
   background-color:rgba(0,0,0,.5);
 }
-label{
-  text-indent: 10px;
-  text-align: center;
-}
 input{
   width: 100%;
   margin: 5px;
+  border: none;
+  border-radius: 5px;
   border-bottom: 3px solid #c82c84;
+  color: #000;
 }
 input[type=submit]{
-  border: 0px;
+  border: none;
   width: 50%;
-  color: #000;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  text-align: center;
+  transform: translatex(50%);
+  color: #fff;
+  padding: 3px;
+  background-color: #c82c84;
+  transition: 0.7s;
 }
-/*MAKE SURE THE FORM LOOKS GOOD IN MOBILE VIEW 
-BECAUSE SHE'S SCRUNCHING UP TO TAKE UP THE TOP SPACE AND I HATE THAT*/
+input[type=submit]:hover {
+  background-color: #a5286f;
+  transform: translatex(0%);
+  width: 100%;
+}
 @media (max-width:750px) {
   h1{
     top:10%;
   }
-  .under{
-      top:55%;
-      padding: 0px;
-      display: grid;
+  .subtitle{
+    top:55%;
+    padding: 0px;
+    display: grid;
   }
   .head{
-      width: 100%;
+    width: 100%;
   }
 }
