@@ -46,11 +46,11 @@ body {
   width: 100%;
 }
 h1 {
-  width: 98%;
+  width: 99%;
   position: absolute;
   top: 20%;
   text-align: center;
-  font-size: 45px;
+  font-size: 50px;
   font-style: oblique;
   text-transform: capitalize;
   padding: 5px;
@@ -108,6 +108,7 @@ input[type=submit]:hover {
 @media (max-width:750px) {
   h1{
     top:10%;
+    font-size: 40px;
   }
   .subtitle{
     top:55%;
