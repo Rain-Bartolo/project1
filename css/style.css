@@ -1,4 +1,7 @@
 /*This is where I get to play :)*/
+*{
+    color: #fff;
+}
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: #c3b9c3;
@@ -27,7 +30,6 @@ body {
 }
 .nav ul li a {
   text-decoration: none;
-  color: #fff;
   text-transform: uppercase;
 }
 .nav ul li::after {
@@ -48,14 +50,13 @@ h1 {
   position: absolute;
   top: 20%;
   text-align: center;
-  color: #fff;
   font-size: 45px;
   font-style: oblique;
   text-transform: capitalize;
   padding: 5px;
 }
 h3 {
-  font-size: 25px;
+  font-size: 23px;
   padding: 10px;
   font-weight: bold;
 }
@@ -71,21 +72,36 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.head,.signup{
+    padding: 20px;
+    width: 100%;
+}
 .head {
-  padding: 50px;
   text-align: center;
   background-color: #000;
-  color: #fff;
+}
+.signup{
+    background-color:rgba(0,0,0,.5);
+}
+input{
+  width: 100%;
+  margin: 5px;
+}
+input[type=submit]{
+    color: #000;
 }
 /*MAKE SURE THE FORM LOOKS GOOD IN MOBILE VIEW 
 BECAUSE SHE'S SCRUNCHING UP TO TAKE UP THE TOP SPACE AND I HATE THAT*/
 @media (max-width:750px) {
-    .under{
-        top:70%;
-        padding: 0px;
-        display: grid;
-    }
-    .head{
-        width: 100%;
-    }
+  h1{
+    top:10%;
+  }
+  .under{
+      top:60%;
+      padding: 0px;
+      display: grid;
+  }
+  .head{
+      width: 100%;
+  }
 }
