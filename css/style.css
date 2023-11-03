@@ -5,22 +5,23 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: #c3b9c3;
+  
 }
 #banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/pexels-anni-roenkae-2860804.jpg);
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/pexels-anni-roenkae-2860804.jpg);
   background-size: cover;
   background-position: center;
 }
 .nav {
-  width: 85%;
+  width: 100%;
   margin: auto;
   padding: 25px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  background-color:rgba(0,0,0,.5);
+  transition: .5s;
 }
 .nav ul li {
   list-style: none;
@@ -54,6 +55,7 @@ h1 {
   font-style: oblique;
   text-transform: capitalize;
   padding: 5px;
+  transition: .5s;
 }
 h3 {
   font-size: 23px;
@@ -67,10 +69,12 @@ p {
 }
 .subtitle{
   display: flex;
+  flex-direction: row;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: .5s;
 }
 .head,.signup{
     padding: 20px;
@@ -98,24 +102,51 @@ input[type=submit]{
   color: #fff;
   padding: 3px;
   background-color: #c82c84;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 input[type=submit]:hover {
   background-color: #a5286f;
   transform: translatex(0%);
   width: 100%;
 }
-@media (max-width:750px) {
+@media (max-width:920px) {
   h1{
-    top:10%;
-    font-size: 40px;
+    top: 12%;
+    font-size: 3em;
   }
   .subtitle{
     top:55%;
-    padding: 0px;
-    display: grid;
+    flex-direction: column;
   }
   .head{
     width: 100%;
+  }
+  .nav{
+    background: rgba(0,0,0,.7);
+  }
+}
+@media(max-width:500px){
+  body{
+    background: #000;
+  }
+  #banner{
+    height: 40vh;
+  }
+  .nav{
+    background-color: #000;
+  }
+  h1{
+    top:10%;
+  }
+  input[type=submit]{
+    transform: translateX(0%);
+    width: 100%;
+  }
+  .subtitle{
+    display: flex;
+    flex-direction: column;
+    transform: translate(-55%, -30%);
+    width:75vw;
+
   }
 }
